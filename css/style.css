@@ -1,0 +1,40 @@
+/* Estilo para el canvas */
+canvas {
+  display: block;
+  margin: 50px auto;  /* Centrar el canvas horizontalmente */
+  background-color: black;  /* Fondo negro */
+  border: 5px solid white;  /* Borde blanco */
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);  /* Sombra */
+}
+
+/* Estilo para el cuerpo de la página */
+body {
+  background-color: #121212;  /* Fondo oscuro */
+  color: white;  /* Texto en blanco */
+  font-family: 'Arial', sans-serif;  /* Fuente simple */
+  text-align: center;  /* Centrar texto */
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo para los encabezados */
+h1, h2 {
+  margin: 20px;
+  color: yellow;  /* Color amarillo para los títulos */
+}
+
+/* Estilo para el botón de pausa */
+button {
+  padding: 10px 20px;
+  background-color: yellow;  /* Fondo amarillo */
+  border: none;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #f0d600;  /* Cambiar el color al pasar el mouse */
+}
