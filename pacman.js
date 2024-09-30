@@ -158,7 +158,7 @@ function drawMaze() {
   for (let row = 0; row < maze.length; row++) {
       for (let col = 0; col < maze[row].length; col++) {
           if (maze[row][col] === 1) {
-              drawTile(col, row, "blue");  // Dibujar las paredes en azul
+              drawTile(col, row, "#14033D");  // Dibujar las paredes en azul
           }
       }
   }
