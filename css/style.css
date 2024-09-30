@@ -2,7 +2,7 @@
 canvas {
   display: block;
   margin: 50px auto;  /* Centrar el canvas horizontalmente */
-  background-color: black;  /* Fondo negro */
+  background-color: #BE00FE;  /* Fondo negro */
   border: 5px solid white;  /* Borde blanco */
   box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);  /* Sombra */
 }
@@ -26,9 +26,9 @@ h1, h2 {
 /* Estilo para el botón de pausa */
 button {
   padding: 10px 20px;
-  background-color: yellow;  /* Fondo amarillo */
+  background: #BE00FE 0% 0% no-repeat padding-box;  /* Fondo lila */
   border: none;
-  color: black;
+  color: #ffffff;
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
@@ -36,5 +36,5 @@ button {
 }
 
 button:hover {
-  background-color: #f0d600;  /* Cambiar el color al pasar el mouse */
+  background: #7E00A8 0% 0% no-repeat padding-box;  /* Cambiar el color al pasar el mouse */
 }
