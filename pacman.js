@@ -1,7 +1,7 @@
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 
-const tileSize = 20;  // Tamaño de cada tile (en píxeles)
+const tileSize = 25;  // Tamaño de cada tile (en píxeles)
 
 // Definir el número de columnas y filas que tendrá el laberinto
 const cols = 30;  // Número de columnas en el laberinto
@@ -119,12 +119,14 @@ function drawTile(x, y, color) {
 }
 
 function drawPacman() {
-    drawTile(pacman.x, pacman.y, pacmanColor);
+    ctx.font = "25px Arial";  // Tamaño de la fuente para el emoji
+    ctx.fillText("😋", pacman.x * tileSize, pacman.y * tileSize + tileSize);  // Dibujar Pac-Man (emoji)
 }
 
 function drawGhosts() {
+    ctx.font = "25px Arial";  // Tamaño de la fuente para los fantasmas
     ghosts.forEach(ghost => {
-        drawTile(ghost.x, ghost.y, ghostColor);
+        ctx.fillText("👻", ghost.x * tileSize, ghost.y * tileSize + tileSize);  // Dibujar cada fantasma
     });
 }
 
@@ -145,10 +147,8 @@ function drawFruits() {
     for (let row = 0; row < maze.length; row++) {
         for (let col = 0; col < maze[row].length; col++) {
             if (maze[row][col] === 3) {  // Si es una fruta
-                ctx.fillStyle = "red";  // Color de las frutas
-                ctx.beginPath();
-                ctx.arc(col * tileSize + tileSize / 2, row * tileSize + tileSize / 2, 8, 0, Math.PI * 2);
-                ctx.fill();
+                ctx.font = "25px Arial";  // Tamaño de la fuente para las frutas
+                ctx.fillText("🍎", col * tileSize, row * tileSize + tileSize);  // Dibujar una cereza (puedes cambiarlo por otra fruta)
             }
         }
     }
